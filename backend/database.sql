@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS meal;
-CREATE TABLE meal (
+DROP TABLE IF EXISTS meals;
+CREATE TABLE meals (
   idMeal int(11) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
   strMeal varchar(25) NOT NULL,
   strDrinkAlternate varchar(25) NULL,
