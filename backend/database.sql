@@ -5,7 +5,7 @@ CREATE TABLE meal (
   strDrinkAlternate varchar(25) NULL,
   strCategory varchar(25) NOT NULL,
   strArea varchar(25) NOT NULL,
-  strInstructions varchar(255) NOT NULL,
+  strInstructions varchar(4200) NOT NULL,
   strMealThumb varchar(255) NOT NULL,
   strTags varchar(255) NULL,
   strYoutube varchar(255) NULL,
@@ -56,4 +56,4 @@ CREATE TABLE meal (
 
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO meal (title) VALUES ('Stuff'), ('Doodads');
+-- Path: backend/database.sql
