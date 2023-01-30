@@ -1,23 +1,23 @@
 const AbstractManager = require("./AbstractManager");
 
-class MealManager extends AbstractManager {
+class MealsManager extends AbstractManager {
   constructor() {
-    super({ table: "meal" });
+    super({ table: "meals" });
   }
 
-  insert(meal) {
+  insert(meals) {
     return this.connection.query(
       `insert into ${this.table} (title) values (?)`,
-      [meal.title]
+      [meals.title]
     );
   }
 
-  update(meal) {
+  update(meals) {
     return this.connection.query(
       `update ${this.table} set title = ? where id = ?`,
-      [meal.title, meal.id]
+      [meals.title, meals.id]
     );
   }
 }
 
-module.exports = MealManager;
+module.exports = MealsManager;
