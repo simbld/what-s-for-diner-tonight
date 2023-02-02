@@ -1,56 +1,63 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 80%;
+  margin: auto;
+  font-family: 'Grandstander', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.App {
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.imgContainer {
+  width: 120px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.imgContainer img {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.itemDescription {
+  padding-left: 15px;
+}
+
+.leftContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.rightContainer {
+  display: flex;
+  align-items: center;
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  margin-top: 25px;
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+.isFavorite {
+  width: 10px;
+  height: 10px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg');
+  background-size: 100%;
+  align-self: flex-start;
+  padding: 20px;
+}
+
+.notFavorite {
+  width: 10px;
+  height: 10px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4f/Ei-heart.svg');
+  background-size: 100%;
+  align-self: flex-start;
+  padding: 20px;
+}
+
+.like-count {
+  color: rgb(5, 4, 2);
+  margin-left: 40%;
 }
