@@ -1,9 +1,29 @@
-export default function Home() {
+import PropTypes from "prop-types";
+
+function Home({ setCurrentPage }) {
   return (
-    <header className="App-header">
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-    </header>
+    <main className="lineaireSimple">
+      <div className="Rules">
+        <h1 className="=bienvenue">On mange quoi ce soir ?</h1>
+      </div>
+      <button
+        className="startButton"
+        type="button"
+        onClick={() => setCurrentPage("question")}
+      >
+        <div className="text">
+          <span className="flicker">
+            ST<span className="offset">A</span>
+            RT
+          </span>
+        </div>
+      </button>
+    </main>
   );
 }
+
+Home.propTypes = {
+  setCurrentPage: PropTypes.func.isRequired,
+};
+
+export default Home;
