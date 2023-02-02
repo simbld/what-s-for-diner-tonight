@@ -1,0 +1,238 @@
+.title {
+  margin: 2rem 0.2rem 1.2rem 1rem;
+  font-size: 1.3rem;
+  color: #ff962e;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: both mandatory;
+  -webkit-overflow-scrolling: touch;
+  touch-action: auto;
+  margin-left: 1rem;
+}
+
+.display-main {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: #090909;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.display-main.rand {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin: 0rem 0rem 15px 0rem;
+  border-radius: 0.7rem;
+  box-shadow: 0px 3px 7px 0px rgba(58, 58, 58, 0.83);
+  max-width: 240px;
+}
+
+img.cardstyle {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 0.7rem 0.7rem 0rem 0rem;
+  box-shadow: 0px 0px 0px 0px rgba(58, 58, 58, 0.83);
+  scroll-snap-align: center;
+}
+
+.titlemeal {
+  padding: 15px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.rand {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.display-meal img {
+  width: 10rem;
+  max-height: auto;
+}
+
+.cross {
+  background: none;
+  border: none;
+  box-shadow: none;
+  width: 1rem;
+  position: sticky;
+  top: 31%;
+  transform: translateY(-50%);
+}
+
+.cross img {
+  width: 2rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0rem 1rem 0rem 1rem;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  box-shadow: 0px 3px 7px 0px rgba(58, 58, 58, 0.83);
+  margin-top: 1.4vh;
+  gap: 2rem;
+}
+
+.mealpage {
+  background-color: white;
+}
+
+.content img {
+  width: 18rem;
+  border-radius: 0.7rem;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.83);
+}
+
+ul {
+  list-style: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  column-gap: 20vw;
+  border-radius: 0.7rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-weight: bolder;
+  gap: 2rem;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  background-color: #ff962e;
+  min-width: 20rem;
+  border-radius: 0.7rem;
+  padding: 1rem 1rem 1rem 1rem;
+  justify-content: space-evenly;
+}
+
+.meal-name {
+  text-align: center;
+}
+
+.ingredients {
+  color: white;
+  font-weight: normal;
+}
+
+.measurements {
+  color: white;
+  font-weight: normal;
+}
+
+.instructions {
+  font-weight: 500;
+  border-radius: 0.7rem;
+  text-shadow: 1px 1px 0.1px darkgrey;
+  line-height: 1.4rem;
+}
+
+.no-result {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    text-align: center;
+  }
+
+  .cross {
+    top: 35%;
+  }
+
+  .carousel-container::-webkit-scrollbar {
+    height: 0.4rem;
+  }
+
+  .carousel-container::-webkit-scrollbar-thumb {
+    background: #d3d3d3;
+    height: 0.4rem;
+  }
+
+  .carousel-container:nth-child(2) {
+    overflow: hidden;
+  }
+
+  .display-main {
+    gap: 2rem;
+  }
+
+  .card {
+    margin: 0rem 1rem 15px 1rem;
+    border-radius: 0.7rem;
+    box-shadow: 0px 3px 7px 0px rgba(58, 58, 58, 0.83);
+  }
+
+  .list {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 20rem;
+  }
+
+  .instructions {
+    max-width: 20rem;
+    justify-content: center;
+    font-size: 2vh;
+  }
+
+  .instructionspage {
+    text-align: justify;
+    display: flex;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: #ff962e;
+    border-radius: 0.7rem;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 20px;
+    gap: 7rem;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-evenly;
+    border-radius: 0%;
+    box-shadow: none;
+  }
+
+  .mealpage {
+    min-width: 30rem;
+    height: 30rem;
+  }
+
+  .titlemeal {
+    padding: 15px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    max-width: 15rem;
+  }
+
+  .display-main.rand {
+    display: flex;
+    flex-direction: row;
+  }
+}

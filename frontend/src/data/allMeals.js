@@ -11,7 +11,7 @@ const useFetch = () => {
     Promise.all(
       alphabet.map((letter) =>
         axios.get(
-          `https://www.themealdb.com/api/json/v2/process.env.API_KEY/search.php?s=${letter}`
+          `https://www.themealdb.com/api/json/v2/9973533/search.php?f=${letter}`
         )
       )
     ).then((responses) => {
@@ -21,28 +21,27 @@ const useFetch = () => {
             idMeal: id,
             strMeal: name,
             strCategory: category,
-            strArea: country,
-            strTags: genre,
+            strArea: area,
+            strTags: tags,
             strInstructions: instructions,
             strMealThumb: image,
-            // eslint-disable-next-line no-shadow
-            ...meals
+            ...meal
           }) => ({
             id,
             name,
             category,
-            country,
-            genre,
+            area,
+            tags,
             instructions,
             image,
-            ingredients: Object.keys(meals)
+            ingredients: Object.keys(meal)
               .filter(
-                (key) => key.includes("strIngredient") && meals[key] != null
+                (key) => key.includes("strIngredient") && meal[key] != null
               )
-              .map((key) => meals[key].toLowerCase()),
-            measures: Object.keys(meals)
-              .filter((key) => key.includes("strMeasure") && meals[key] != null)
-              .map((key) => meals[key].toLowerCase()),
+              .map((key) => meal[key].toLowerCase()),
+            measures: Object.keys(meal)
+              .filter((key) => key.includes("strMeasure") && meal[key] != null)
+              .map((key) => meal[key].toLowerCase()),
           })
         );
 
