@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
-function Card({ mealName, image, handlePage }) {
+function Card({ mealName, foodImage, handlePage }) {
   return (
     <figure className="card" onClick={handlePage} aria-hidden="true">
-      <img className="cardstyle" src={image} alt={mealName} />
+      <img className="cardstyle" src={foodImage} alt={mealName} />
       <figcaption className="titlemeal"> {mealName}</figcaption>
     </figure>
   );
@@ -11,7 +11,7 @@ function Card({ mealName, image, handlePage }) {
 
 Card.propTypes = {
   mealName: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  foodImage: PropTypes.string.isRequired,
   handlePage: PropTypes.func.isRequired,
 };
 
