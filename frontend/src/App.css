@@ -1,3 +1,27 @@
+* {
+  margin: 0;
+  /*positioner la marge à 0*/
+  padding: 0;
+  /*positionner le bord à 0*/
+  --main-color: #ff962e;
+  /*couleur principal*/
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.search-not-found {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.popup button {
+  display: flex;
+}
+
+.cross-icon {
+  width: 1rem;
+}
+
 body {
   width: 80%;
   margin: auto;
