@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import { useContext /* useState */ } from "react";
-import Card from "./Card";
 import MealPage from "./MealPage";
 import MealType from "../prop-types/MealType";
 import FiltersContext from "../FiltersContext";
 import "./Section.css";
+import Card from "./Card/Card";
 
 function Section({
   searchValue,

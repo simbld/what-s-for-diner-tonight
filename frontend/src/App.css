@@ -9,10 +9,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #f5f5f5;
-}
-
 .search-not-found {
   margin: 1rem;
   font-size: 1.2rem;
@@ -24,4 +20,68 @@ body {
 
 .cross-icon {
   width: 1rem;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  font-family: 'Grandstander', cursive;
+}
+
+h1 {
+  text-align: center;
+}
+
+.imgContainer {
+  width: 120px;
+}
+
+.imgContainer img {
+  width: 100%;
+}
+
+.itemDescription {
+  padding-left: 15px;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+  color: red;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  margin-top: 25px;
+}
+
+.isFavorite {
+  width: 10px;
+  height: 10px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg');
+  background-size: 100%;
+  align-self: flex-start;
+  padding: 20px;
+}
+
+.notFavorite {
+  width: 10px;
+  height: 10px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4f/Ei-heart.svg');
+  background-size: 100%;
+  align-self: flex-start;
+  padding: 20px;
+}
+
+.like-count {
+  color: rgb(5, 4, 2);
+  margin-left: 40%;
 }
